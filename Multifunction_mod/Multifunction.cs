@@ -21,8 +21,7 @@ namespace Multifunction_mod
         public const string NAME = "Multfuntion_mod";
         public const string VERSION = "3.4.3";
 
-        #region 临时变量
-
+        #region Initialize Variables
 
         public static bool IsEnglish;
 
@@ -90,7 +89,9 @@ namespace Multifunction_mod
         public static Dictionary<int, List<RecipeProto>> smeltRecipes = new Dictionary<int, List<RecipeProto>>();
         public static Dictionary<int, Dictionary<int, int>> Beltsignal = new Dictionary<int, Dictionary<int, int>>();
         public static Dictionary<int, Dictionary<int, int>> Beltsignalnumberoutput = new Dictionary<int, Dictionary<int, int>>();
+        
         #endregion
+
         #region 配置菜单
         public static ConfigEntry<KeyboardShortcut> QuickKey;
         public static ConfigEntry<int> veinlines;
@@ -200,6 +201,7 @@ namespace Multifunction_mod
         public static ConfigEntry<bool> ModifyDarkFogLevel;
         public static ConfigEntry<int> ModifyDarkFogLevelValue;
         #endregion
+
         void Start()
         {
             preparedraw();
